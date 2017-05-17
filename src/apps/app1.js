@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
 import html from './template';
-import script from '../test';
-console.log(script);
 
 class MyWeb extends Component {
   componentWillMount() {
