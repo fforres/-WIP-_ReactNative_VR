@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
 import html from './template';
+import script from '../test';
+console.log(script);
 
 class MyWeb extends Component {
   componentWillMount() {
     console.log(html);
   }
   componentDidMount() {
-    const script = 'alert("jasd")';  // eslint-disable-line quotes
-    this.webview.injectJavaScript(script);
+    // this.webview.injectJavaScript(script);
   }
   render() {
     return (
